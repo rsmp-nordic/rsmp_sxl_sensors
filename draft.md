@@ -9,7 +9,7 @@ Theese sensor types are commonly used byt road authorities, and are supported in
 - Radars
 - Video sensor
 - Push buttons
-- Tubes
+- Pneumatic Tubes
 
 Less common use cases that we can consider later include:
 - Gates (eg. RFID tags, number plates, etc)
@@ -27,10 +27,12 @@ Systems that deliver travel time should might be supported later.
 
 ### Data types
 We focus on these data types:
-- count
+- count (volume)
 - speed
-- occupancy
-
+- presence (any vehicle/pedestrian present at the sensor at the moment?)
+- occupancy (percent of time where someone was present at the sensor)
+- density (percentage of road covered with vehicles. density of traffic)
+ 
 Other data types to consider later:
 - direction
 - events - stopped vehicles, peoples behavior, dropped cargo, smoke...
@@ -41,8 +43,9 @@ Other data types to consider later:
 - turn movements in intersections
 
 ## Classification
-Many different standards exists in EU for how to classify vehicles. We might need to support different national/EU schemes.
- 
+We need to support different national/EU schemes for classification.
+Data should include the classification used.
+
 ### Aggregation
 It should be possible to aggregate data by:
 - time period
